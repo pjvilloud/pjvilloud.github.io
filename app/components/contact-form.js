@@ -36,11 +36,17 @@ export default Ember.Component.extend({
 			  	dataType: "json",
 		      	success: function() {
 			    	Ember.$(form).find('#send-icon').removeClass('fa-spin');
-	    			Ember.$(form).append('<div class="alert alert-success">Message envoyé !</div>');
+			    	Ember.$(".alert.msg").empty();
+	    			Ember.$("body").append('<div class="alert msg alert-success fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Message envoyé !</div>');
+	    			Ember.$(form).find("input[name='name']").val("");
+	    			Ember.$(form).find("input[name='_subject']").val("");
+	    			Ember.$(form).find("input[name='_replyto']").val("");
+	    			Ember.$(form).find("textarea[name='message']").val("");
 	    		},
 	    		error: function() {
+	    			Ember.$(".alert.msg").empty();
 			    	Ember.$(form).find('#send-icon').removeClass('fa-spin');
-	    			Ember.$(form).append('<div class="alert alert-error">Oups, une erreur est survenue. Réessayez plus tard !</div>');
+	    			Ember.$("body").append('<div class="alert msg alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Oups, une erreur est survenue. Réessayez plus tard !</div>');
 	    		}
 		    });
 		  }
