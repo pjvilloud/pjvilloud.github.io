@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header" >
+			{{link-to "  Pierre-Julien VILLOUD" "index" classNames="hidden-xs navbar-brand"}}
+			{{link-to "PJV" "index" classNames="visible-xs navbar-brand"}}
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li {{action "slideTo" "professional-experience"}}><a href="#"><i class="fa fa-briefcase"></i><span class="hidden-xs">&nbsp;Expérience pro</span></a></li>
+			<li {{action "slideTo" "portfolio-section"}}><a href="#"><i class="fa fa-code"></i><span class="hidden-xs">&nbsp;Projets</span></a></li>
+			<li {{action "slideTo" "my-training"}}><a href="#"><i class="fa fa-graduation-cap"></i><span class="hidden-xs">&nbsp;Formation</span></a></li>
+			<li {{action "slideTo" "contact-me"}}><a href="#"><i class="fa fa-envelope"></i><span class="hidden-xs">&nbsp;Contact</span></a></li>
+			{{!-- <li>{{#link-to "posts"}}<i class="fa fa-rss"></i><span class="hidden-xs">&nbsp;Blog</span>{{/link-to}}</li> --}}
+		</ul>
+	</div>
+</nav>
+	
