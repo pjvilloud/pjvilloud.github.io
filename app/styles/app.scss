@@ -1,0 +1,122 @@
+@import "ember-cli-bootswatch/bootswatch";
+@import "timeline";
+
+body {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.navbar-center > li
+{
+  float: left !important;
+  width: 25%;
+}
+
+.nav.navbar-nav.navbar-right {
+  float: right !important;
+}
+
+.navbar-right > li, .navbar-header, .nav.navbar-nav.navbar-center {
+  float: left;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100% !important;
+}
+
+.panel-body {
+  height:208px;
+}
+
+.panel img {
+  height: 55px;
+  margin: auto;
+}
+
+.panel.burnout > .panel-heading, a.burnout {
+  background-color: #151e1f;
+
+}
+
+.panel.jdm, a.jdm {
+  border-color: #00a9a2;
+}
+
+.panel.jdm > .panel-heading, a.jdm {
+  background-color: #00a9a2;
+}
+
+.btn.jdm {
+  background-color: #00a9a2;
+  border-color: #00a9a2;
+}
+.panel.burnout, a.burnout {
+  border-color: #151e1f;
+}
+
+.btn.burnout {
+  background-color: #8F7620;
+  border-color: #8F7620;
+}
+
+.panel.feedes > .panel-heading, a.feedes {
+  background-color: #2c3e50;
+
+}
+
+.panel.feedes, a.feedes {
+  border-color: #2c3e50;
+}
+
+.btn.feedes {
+  background-color: #17BA9B;
+  border-color: #17BA9B;
+}
+
+.btn.naturellesens {
+  background-color: #55BBC0;
+  border-color: #55BBC0;
+}
+
+.alert.msg {
+  position: fixed;
+  top: 55px;
+  right: 5px;
+  z-index: 99999;
+}
+
+button.close {
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .vertical-center p.text-center {
+    text-align: left !important;
+  }
+}
+@media (max-width: 767px) {
+  .btn {
+    margin-bottom: 5px;
+  }
+
+  .jumbotron {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .navbar-right, .navbar-center {
+    font-size: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 4px;
+  }
+}
+
+.technos {
+  margin-bottom: 10px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+{{#if technos}}
+  <div class="text-center technos">
+    {{#each technos as |techno|}}
+      <span class="badge badge-{{techno.color}}">
+        {{#if description}}
+          <BsTooltip @title="{{techno.description}}" />
+        {{/if}}
+        {{techno.title}}
+      </span>
+    {{/each}}
+  </div>
+{{/if}}

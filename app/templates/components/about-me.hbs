@@ -2,122 +2,78 @@
 	<h3>Expériences professionnelles</h3>
 </div>
 <ul class="timeline">
-    <li class="timeline-inverted">
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle invert" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>Formateur</h4>
-            </div>
-            <div class="timeline-body">
-                <p>Formateur à <a href="http://www.ipi-ecoles.com/" target="_blank">l'Institut de Poly-Informatique</a>, j'interviens sur les formations Java premier niveau, MySQL, SOA et qualité logicielle.</p>
-                <p>Je dispense ces formations sur les campus IPI de Lyon et de Clermont.</p>
-                <div class="text-center technos">
-                    <span class="label label-default" data-toggle="tooltip" data-placement="top" title="Spring, Hibernate">Java</span>
-                    <span class="label label-primary" data-toggle="tooltip" data-placement="top" title="Tests unitaires, tests d'acceptation, tests d'intégration, intégration continue">Qualité logicielle</span>
-                    <span class="label label-info" data-toggle="tooltip" data-placement="top" title="">SOA</span>
-                    <span class="label label-success" data-toggle="tooltip" data-placement="top" title="MySQL">Base de données</span>
-                </div>
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">Année scolaire 2017/2018</p>
-            </div>
-        </div>
-    </li>
+  <TimelineItem @title="Développeur freelance" @period="Mai 2017" as |ti|>
+    <ti.description>
+      <p>J'effectue des prestations de développement Web pour le compte de divers clients et leur propose également des audits sur leurs processus et méthodes de développement.</p>
+    </ti.description>
+  </TimelineItem>
 
-    <li>
-        <div class="timeline-badge">
-          <a><i class="fa fa-circle" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>Architecte logiciel</h4>
-            </div>
-            <div class="timeline-body">
-                <p>Système de gestion de créances et d'ordres de paiement pour un groupement de mutuelles (santé, prévoyance, retraite, assurance). Choix techniques, développement de l'API, du site web public et de l'administration, développement des batchs d'intégration des fichiers (créances, référentiels...).</p>
-                <div class="text-center technos">
-                	<span class="label label-default" data-toggle="tooltip" data-placement="top" title="Spring, Spring Batch, Hibernate">Java</span>
-					<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="TestNG, Sonar, ELK (Elastic Search, Logstash, Kibana), Docker">Qualité logicielle</span>
-					<span class="label label-info" data-toggle="tooltip" data-placement="top" title="Ember JS, Spring REST, Spring Security">Web</span>
-					<span class="label label-success" data-toggle="tooltip" data-placement="top" title="MySql">Base de données</span>
-                </div>
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">Janvier 2016</p>
-            </div>
-        </div>
-    </li>
+  <TimelineItem @title="Formateur" @period="Années scolaires 2017, 2018 et 2019" @right=true as |ti|>
+    <ti.description>
+    <p>Formateur à <a href="http://www.ipi-ecoles.com/" target="_blank">l'Institut de Poly-Informatique</a>, j'interviens sur les formations Java premier niveau, MySQL, SOA et qualité logicielle.</p>
+    <p>Je dispense ces formations sur les campus IPI de Lyon et de Clermont.</p>
+    </ti.description>
+    <ti.technos @technos={{array
+      (hash color="light" title="Java" description="Spring, Hibernate")
+      (hash color="primary" title="Qualité logicielle" description="Tests unitaires, tests d'acceptation, tests d'intégration, intégration continue")
+      (hash color="info" title="SOA")
+      (hash color="success" title="MySQL" description="Base de données")
+    }}>
+    </ti.technos>
+  </TimelineItem>
 
-    <li class="timeline-inverted">
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle invert" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>Responsable d'application</h4>
-            </div>
-            <div class="timeline-body">
-                <p>Refonte du système d'information gérant l'ensemble des missions locales (organismes d'insertion professionnelle des jeunes). Migration des données de l'ancien système vers le nouveau.</p>
-                <p>Réflexions et mises en place d'outils de qualité logicielle (intégration continue, tests, bonnes pratiques...)</p>
-                <div class="text-center technos">
-                	<span class="label label-default" data-toggle="tooltip" data-placement="top" title="Spring, Hibernate, RestHub">Java</span>
-					<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="TestNG, Mockito, Cucumber">Qualité logicielle</span>
-					<span class="label label-info" data-toggle="tooltip" data-placement="top" title="Backbone JS, RestHub Backbone, Elastic search">Web</span>
-					<span class="label label-success" data-toggle="tooltip" data-placement="top" title="Oracle/PostgreSQL">Base de données</span>
-                </div>
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">Juillet 2014</p>
-            </div>
-        </div>
-    </li>
+  <TimelineItem @title="Architecte logiciel" @period="Janvier 2016" as |ti|>
+    <ti.description>
+      <p>Système de gestion de créances et d'ordres de paiement pour un groupement de mutuelles (santé, prévoyance, retraite, assurance). Choix techniques, développement de l'API, du site web public et de l'administration, développement des batchs d'intégration des fichiers (créances, référentiels...).</p>
+    </ti.description>
+    <ti.technos @technos={{array
+      (hash color="light" title="Java" description="Spring, Spring Batch, Hibernate")
+      (hash color="primary" title="Qualité logicielle" description="TestNG, Sonar, ELK (Elastic Search, Logstash, Kibana), Docker")
+      (hash color="info" title="Web" description="Ember JS, Spring REST, Spring Security")
+      (hash color="success" title="MySQL" description="Base de données")
+    }}>
+    </ti.technos>
+  </TimelineItem>
 
-    <li>
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>Chef de projet</h4>
-            </div>
-            <div class="timeline-body">
-                <p>Projet de certification PCI DSS d'un projet de Back Office pour la SNCF. Analyse du besoin et rédaction des spécifications fonctionnelles. Conception de modules et réalisation de tests fonctionnels automatisés. Rôle de Product Owner (création et maintien d'un backlog projet, priorisation...).</p>
-				<p>Méthodes de travail : TDD/ATDD</p>
-				<div class="text-center technos">
-					<span class="label label-default" data-toggle="tooltip" data-placement="top" title="Spring, Hibernate, RestHub, Spring Batch">Java</span>
-					<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="TestNG, Mockito, MakeItEasy, Concordion">Qualité logicielle</span>
-					<span class="label label-info" data-toggle="tooltip" data-placement="top" title="Backbone JS, RestHub Backbone, jQuery, moment.js, amCharts">Web</span>
-					<span class="label label-success" data-toggle="tooltip" data-placement="top" title="Oracle">Base de données</span>
-				</div>
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">Mars 2011</p>
-            </div>
-        </div>
-    </li>
+  <TimelineItem @title="Responsable d'application" @period="Juillet 2014" @right=true as |ti|>
+    <ti.description>
+      <p>Refonte du système d'information gérant l'ensemble des missions locales (organismes d'insertion professionnelle des jeunes). Migration des données de l'ancien système vers le nouveau.</p>
+      <p>Réflexions et mises en place d'outils de qualité logicielle (intégration continue, tests, bonnes pratiques...)</p>
+    </ti.description>
+    <ti.technos @technos={{array
+      (hash color="light" title="Java" description="Spring, Hibernate, RestHub")
+      (hash color="primary" title="Qualité logicielle" description="TestNG, Mockito, Cucumber")
+      (hash color="info" title="Web" description="Backbone JS, RestHub Backbone, Elastic search")
+      (hash color="success" title="Oracle/PostgreSQL" description="Base de données")
+    }}>
+    </ti.technos>
+  </TimelineItem>
 
-    <li class="timeline-inverted">
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle invert" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4>Responsable d'application</h4>
-            </div>
-            <div class="timeline-body">
-                <p>Développement d'un web service d'envoi de SMS. Refonte des serveurs vocaux interactifs (SVI) de la CNAF (Caisse Nationale des Allocations Familiales) en Struts et VXML.</p>
-                <div class="text-center technos">
-					<span class="label label-default" data-toggle="tooltip" data-placement="top" title="Spring, Hibernate, Hades, CXF">Java</span>
-					<span class="label label-primary" data-toggle="tooltip" data-placement="top" title="JUnit">Qualité logicielle</span>
-					<span class="label label-info" data-toggle="tooltip" data-placement="top" title="Struts">Web</span>
-					<span class="label label-success" data-toggle="tooltip" data-placement="top" title="MySql">Base de données</span>
-				</div>
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">Juillet 2010</p>
-            </div>
-        </div>
-    </li>
-    <li class="clearfix no-float"></li>
+  <TimelineItem @title="Chef de projet" @period="Mars 2011" as |ti|>
+    <ti.description>
+      <p>Projet de certification PCI DSS d'un projet de Back Office pour la SNCF. Analyse du besoin et rédaction des spécifications fonctionnelles. Conception de modules et réalisation de tests fonctionnels automatisés. Rôle de Product Owner (création et maintien d'un backlog projet, priorisation...).</p>
+      <p>Méthodes de travail : TDD/ATDD</p>
+    </ti.description>
+    <ti.technos @technos={{array
+      (hash color="light" title="Java" description="Spring, Hibernate, RestHub, Spring Batch")
+      (hash color="primary" title="Qualité logicielle" description="TestNG, Mockito, MakeItEasy, Concordion")
+      (hash color="info" title="Web" description="Backbone JS, RestHub Backbone, jQuery, moment.js, amCharts")
+      (hash color="success" title="Oracle" description="Base de données")
+    }}>
+    </ti.technos>
+  </TimelineItem>
+
+  <TimelineItem @title="Responsable d'application" @period="Juillet 2010" @right=true as |ti|>
+    <ti.description>
+      <p>Développement d'un web service d'envoi de SMS. Refonte des serveurs vocaux interactifs (SVI) de la CNAF (Caisse Nationale des Allocations Familiales) en Struts et VXML.</p>
+    </ti.description>
+    <ti.technos @technos={{array
+      (hash color="light" title="Java" description="Spring, Hibernate, Hades, CXF")
+      (hash color="primary" title="Qualité logicielle" description="JUnit")
+      (hash color="info" title="Web" description="Struts")
+      (hash color="success" title="MySql" description="Base de données")
+    }}>
+    </ti.technos>
+  </TimelineItem>
+  <li class="clearfix no-float"></li>
 </ul>

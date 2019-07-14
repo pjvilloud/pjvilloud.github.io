@@ -1,5 +1,5 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 import SlideToMixin from '../mixins/slide-to';
 
-export default Ember.Component.extend(SlideToMixin, {
+export default Component.extend(SlideToMixin, {
 });

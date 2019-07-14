@@ -1,11 +1,12 @@
-import Ember from 'ember';
+import Mixin from '@ember/object/mixin';
+import $ from 'jquery';
 
-export default Ember.Mixin.create({
+export default Mixin.create({
 	actions:{
 		slideTo(id){
-			Ember.$('html, body').animate({
-		        scrollTop: Ember.$("#" + id).offset().top - 60
-		    }, 1000);
+			$('html, body').animate({
+        scrollTop: $("#" + id).offset().top - 60
+      }, 1000);
 		}
 	}
 });
