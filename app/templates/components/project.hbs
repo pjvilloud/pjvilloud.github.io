@@ -1,0 +1,23 @@
+<div class="card {{border-color}} {{cardClasses}} mb-3">
+  <div class="py-2 {{bg-color}} text-center card-img-top">
+    {{#if img-text}}
+      <h3>{{img-text}}</h3>
+    {{else}}
+    <img src="/img/{{img}}" alt="" class="img-fluid">
+  {{/if}}
+  </div>
+  <div class="card-body text-center">
+{{!--    <h5 class="card-title">{{title}}</h5>--}}
+    <p class="card-text text-left">{{description}}</p>
+    <div class="technos">
+      {{yield}}
+    </div>
+  </div>
+  {{#if website}}
+  <div class="card-footer">
+    <div class="text-center">
+        <a href="{{website}}" target="_blank" class="btn {{btn-color}}">Visiter le site</a>
+    </div>
+  </div>
+  {{/if}}
+</div>
