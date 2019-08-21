@@ -5,8 +5,7 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     fingerprint: {
-      enabled: true,
-      generateAssetMap: true
+      enabled: false
     },
     // Add options here
     'ember-cli-bootswatch': {
