@@ -1,27 +1,26 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import computed from "@ember/objects";
+import $ from "jquery";
 
-export default Ember.Component.extend({
-	text: null,
-	header: null,
-	readMore: null,
-	didInsertElement: function(){
-		var that = this;
-		Ember.$.get("posts/" + this.get('mdFile') + ".md", function( data ) {
-			that.set('fileContent',data);
-			var parts = data.split('---');
-			that.set('header', JSON.parse(parts[0]));
-			var morePosition = parts[1].indexOf("[MORE]");
-			if(that.get('type') === "excerpt" && morePosition > 0){
-				that.set('text',parts[1].substr(0, morePosition));
-				that.set('readMore', true);
-			}
-			else {
-				that.set('text', parts[1].replace("[MORE]", ""));
-			}
-		});
-
-	},
-	fullUrl: function(){
-		return "http://feedes.fr/post/" + this.get('mdFile');
-	}.property('mdFile')
+export default Component.extend({
+  text: null,
+  header: null,
+  readMore: null,
+  didUpdateAttrs() {
+    $.get("posts/" + this.get('mdFile') + ".md", data => {
+      this.set('fileContent', data);
+      let parts = data.split('---');
+      this.set('header', JSON.parse(parts[0]));
+      let morePosition = parts[1].indexOf("[MORE]");
+      if (this.get('type') === "excerpt" && morePosition > 0) {
+        this.set('text', parts[1].substr(0, morePosition));
+        this.set('readMore', true);
+      } else {
+        this.set('text', parts[1].replace("[MORE]", ""));
+      }
+    });
+  },
+  fullUrl: computed("mdFile", function() {
+    return "http://feedes.fr/post/" + this.get('mdFile');
+  })
 });

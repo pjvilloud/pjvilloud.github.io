@@ -1,68 +1,26 @@
 <div class="text-center" id="my-training">
-	<h3>Formation</h3>
+  <h3>Formation</h3>
 </div>
 <ul class="timeline">
-    <li>
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4><img src="/img/seal-cspo.png" alt=""> Certified Scrum Product Owner ®</h4>
-            </div>
-            <div class="timeline-body">
-            </div>
-            <div class="timeline-footer">
-                <p class="text-right">2012</p>
-            </div>
-        </div>
-    </li>
-
-    <li  class="timeline-inverted">
-        <div class="timeline-badge">
-            <a><i class="fa fa-circle invert" id=""></i></a>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4><img src="/img/seal-csm.png" alt=""> Certified Scrum Master ®</h4>
-            </div>
-            <div class="timeline-body">
-            </div>
-            <div class="timeline-footer primary">
-                <p class="text-right">2011</p>
-            </div>
-        </div>
-    </li>
-  <li>
-    <div class="timeline-badge">
-      <a><i class="fa fa-circle" id=""></i></a>
-    </div>
-    <div class="timeline-panel">
-      <div class="timeline-heading">
-        <h4><img src="/img/insalyon.jpg" alt="">Ingénieur INSA Lyon</h4>
-      </div>
-      <div class="timeline-body">
-      </div>
-      <div class="timeline-footer">
-        <p class="text-right">Promotion 2010</p>
-      </div>
-    </div>
-  </li>
-
-  <li  class="timeline-inverted">
-    <div class="timeline-badge">
-      <a><i class="fa fa-circle invert" id=""></i></a>
-    </div>
-    <div class="timeline-panel">
-      <div class="timeline-heading">
-        <h4><img src="/img/logo-iut2.png" alt="">Technicien Génie Logiciel IUT2 Grenoble</h4>
-      </div>
-      <div class="timeline-body">
-      </div>
-      <div class="timeline-footer primary">
-        <p class="text-right">Promotion 2007</p>
-      </div>
-    </div>
-  </li>
-    <li class="clearfix no-float"></li>
+  <TimelineItem @period="2012" as |ti|>
+    <ti.description>
+      <h4><img src="/img/seal-cspo.png" alt=""> Certified Scrum Product Owner ®</h4>
+    </ti.description>
+  </TimelineItem>
+  <TimelineItem @period="2011" @right="true" as |ti|>
+    <ti.description>
+      <h4><img src="/img/seal-csm.png" alt=""> Certified Scrum Master ®</h4>
+    </ti.description>
+  </TimelineItem>
+  <TimelineItem @period="Promotion 2010" as |ti|>
+    <ti.description>
+      <h4><img src="/img/insalyon.jpg" alt="">Ingénieur INSA Lyon</h4>
+    </ti.description>
+  </TimelineItem>
+  <TimelineItem @period="Promotion 2007" @right="true" as |ti|>
+    <ti.description>
+      <h4 class="ml-3"><img src="/img/logo-iut2.png" alt="">Technicien Génie Logiciel IUT2 Grenoble</h4>
+    </ti.description>
+  </TimelineItem>
+  <li class="clearfix no-float"></li>
 </ul>

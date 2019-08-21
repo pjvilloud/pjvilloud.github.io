@@ -3,7 +3,7 @@
     {{#each technos as |techno|}}
       <span class="badge badge-{{techno.color}}">
         {{#if description}}
-          <BsTooltip @title="{{techno.description}}" />
+          <BsTooltip @title={{techno.description}}/>
         {{/if}}
         {{techno.title}}
       </span>

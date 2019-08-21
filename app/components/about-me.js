@@ -1,7 +1,4 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
-	didInsertElement(){
-		//Ember.$('.timeline [data-toggle="tooltip"]').tooltip();
-	}
+export default Component.extend({
 });

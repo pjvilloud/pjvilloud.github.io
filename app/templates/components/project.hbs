@@ -3,21 +3,20 @@
     {{#if img-text}}
       <h3>{{img-text}}</h3>
     {{else}}
-    <img src="/img/{{img}}" alt="" class="img-fluid">
-  {{/if}}
+      <img src="/img/{{img}}" alt="" class="img-fluid">
+    {{/if}}
   </div>
   <div class="card-body text-center">
-{{!--    <h5 class="card-title">{{title}}</h5>--}}
     <p class="card-text text-left">{{description}}</p>
     <div class="technos">
       {{yield}}
     </div>
   </div>
   {{#if website}}
-  <div class="card-footer">
-    <div class="text-center">
-        <a href="{{website}}" target="_blank" class="btn {{btn-color}}">Visiter le site</a>
+    <div class="card-footer">
+      <div class="text-center">
+        <a href={{website}} target="_blank" rel="noopener" class="btn {{btn-color}}">Visiter le site</a>
+      </div>
     </div>
-  </div>
   {{/if}}
 </div>
