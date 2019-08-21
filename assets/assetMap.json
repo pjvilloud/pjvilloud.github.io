@@ -1,0 +1,22 @@
+{
+  "assets": {
+    "assets/assetMap.json": "assets/assetMap.json",
+    "assets/pijey.css": "assets/pijey-35da1201b7b4f76fcb48dce07e9b428f.css",
+    "assets/pijey.js": "assets/pijey-3d04debf62cc271364d43adbeb365f35.js",
+    "assets/vendor.css": "assets/vendor-235eb821828b59e80bab45b4a750688f.css",
+    "assets/vendor.js": "assets/vendor-786d05c1a7153a44343413459ee0382a.js",
+    "img/Sherpa_logo.png": "img/Sherpa_logo-c9051f75ed00f937ccaa62e8e83c7567.png",
+    "img/burnoutlafindureve.png": "img/burnoutlafindureve-6ff8459d757dd943041aa45c0be7b018.png",
+    "img/cotizen.png": "img/cotizen-51edd294155f686f645767d2e25649fe.png",
+    "img/feedes.png": "img/feedes-2a2eaf072bd8df317c56622ac2b44342.png",
+    "img/insalyon.jpg": "img/insalyon-4a9c100ad9e51cd022bd5012952c6f06.jpg",
+    "img/jdm.png": "img/jdm-45df23694a619233dd7af9cca97da2f6.png",
+    "img/logo-iut2.png": "img/logo-iut2-e69aa7c0aae8f8b3ce859b3c8805876c.png",
+    "img/naturellesens.png": "img/naturellesens-198498c9134b41b3f5319aeee61ef936.png",
+    "img/pj.jpg": "img/pj-9fa4f052e9489fef4237be95b73a5168.jpg",
+    "img/plugandwork.png": "img/plugandwork-b13b7aa12d502ee373843bbea342f8e2.png",
+    "img/seal-csm.png": "img/seal-csm-5b6cf5abc13cfe44fc85045e5b5f81e5.png",
+    "img/seal-cspo.png": "img/seal-cspo-823191da025afcb1e04db14b6c95c3eb.png"
+  },
+  "prepend": ""
+}
