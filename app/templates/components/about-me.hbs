@@ -2,13 +2,35 @@
   <h3>Expériences professionnelles</h3>
 </div>
 <ul class="timeline">
-  <TimelineItem @title="Développeur freelance" @period="Mai 2017" as |ti|>
+  <TimelineItem @title="Formateur" @period="Depuis Septembre 2020" as |ti|>
+    <ti.description>
+      <p>Formateur à <a href="https://www.humancoders.com/" target="_blank" rel="noopener">HumanCoders</a>, je dispense en inter ou en intra-entreprises les formations suivantes :</p>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.humancoders.com/formations/java-spring" target="_blank">Java Spring</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.humancoders.com/formations/java-spring-batch" target="_blank">Spring Batch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.humancoders.com/formations/emberjs" target="_blank">EmberJS</a>
+        </li>
+
+      </ul>
+    </ti.description>
+    <ti.technos @technos={{array
+            (hash color="light" title="Java" description="Spring, Hibernate, Spring MVC, Spring Batch")
+            (hash color="info" title="EmberJS")
+    }}>
+    </ti.technos>
+  </TimelineItem>
+  <TimelineItem @title="Développeur freelance" @period="Depuis Mai 2017" @right="true" as |ti|>
     <ti.description>
       <p>J'effectue des prestations de développement Web pour le compte de divers clients et leur propose également des audits sur leurs processus et méthodes de développement.</p>
     </ti.description>
   </TimelineItem>
 
-  <TimelineItem @title="Formateur" @period="Années scolaires 2017, 2018 et 2019" @right="true" as |ti|>
+  <TimelineItem @title="Formateur" @period="Depuis Septembre 2017" as |ti|>
     <ti.description>
       <p>Formateur à <a href="http://www.ipi-ecoles.com/" target="_blank" rel="noopener">l'Institut de Poly-Informatique</a>, je dispense les formations suivantes sur les campus IPI de Lyon et de Clermont-Ferrand :</p>
       <ul class="nav">
@@ -35,6 +57,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="https://pjvilloud.github.io/ipi-mdd-050-cours/" target="_blank">Spring MVC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://pjvilloud.github.io/cours-springbatch/" target="_blank">Spring Batch</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://pjvilloud.github.io/ipi-java-330-th-cours/" target="_blank">Thymeleaf</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="https://pjvilloud.github.io/ipi-java-330-cours/" target="_blank">JSP</a>
@@ -66,7 +94,7 @@
     </ti.technos>
   </TimelineItem>
 
-  <TimelineItem @title="Architecte logiciel" @period="Janvier 2016" as |ti|>
+  <TimelineItem @title="Architecte logiciel" @period="Janvier 2016" @right="true" as |ti|>
     <ti.description>
       <p>Système de gestion de créances et d'ordres de paiement pour un groupement de mutuelles (santé, prévoyance, retraite, assurance). Choix techniques, développement de l'API, du site web public et de l'administration, développement des batchs d'intégration des fichiers (créances, référentiels...).</p>
     </ti.description>
@@ -79,7 +107,7 @@
     </ti.technos>
   </TimelineItem>
 
-  <TimelineItem @title="Responsable d'application" @period="Juillet 2014" @right="true" as |ti|>
+  <TimelineItem @title="Responsable d'application" @period="Juillet 2014" as |ti|>
     <ti.description>
       <p>Refonte du système d'information gérant l'ensemble des missions locales (organismes d'insertion professionnelle des jeunes). Migration des données de l'ancien système vers le nouveau.</p>
       <p>Réflexions et mises en place d'outils de qualité logicielle (intégration continue, tests, bonnes pratiques...)</p>
@@ -93,7 +121,7 @@
     </ti.technos>
   </TimelineItem>
 
-  <TimelineItem @title="Chef de projet" @period="Mars 2011" as |ti|>
+  <TimelineItem @title="Chef de projet" @period="Mars 2011" @right="true" as |ti|>
     <ti.description>
       <p>Projet de certification PCI DSS d'un projet de Back Office pour la SNCF. Analyse du besoin et rédaction des spécifications fonctionnelles. Conception de modules et réalisation de tests fonctionnels automatisés. Rôle de Product Owner (création et maintien d'un backlog projet, priorisation...).</p>
       <p>Méthodes de travail : TDD/ATDD</p>
@@ -107,7 +135,7 @@
     </ti.technos>
   </TimelineItem>
 
-  <TimelineItem @title="Responsable d'application" @period="Juillet 2010" @right="true" as |ti|>
+  <TimelineItem @title="Responsable d'application" @period="Juillet 2010" as |ti|>
     <ti.description>
       <p>Développement d'un web service d'envoi de SMS. Refonte des serveurs vocaux interactifs (SVI) de la CNAF (Caisse Nationale des Allocations Familiales) en Struts et VXML.</p>
     </ti.description>
